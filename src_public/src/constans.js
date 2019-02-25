@@ -1,0 +1,11 @@
+export const SERVER_ENDPOINT = 'http://localhost:8080';
+
+export const C = {
+  USER_LOGIN: 'USER_LOGIN',
+  LOAD_USER_LIST: 'LOAD_USER_LIST',
+  GET_USER_LIST: 'GET_USER_LIST',
+  GET_SITE_LIST: 'GET_SITE_LIST',
+  FAIL: 'FAIL',
+  PROCESS: 'PROCESS',
+  DONE: 'DONE'
+};
