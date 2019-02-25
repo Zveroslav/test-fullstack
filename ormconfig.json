@@ -1,0 +1,51 @@
+{
+  "MEMORY_DB": {
+    "type": "sqlite",
+    "database": ":memory:",
+    "entities": [
+      "src/**/**.entity{.ts,.js}"
+    ],
+    "logging": false,
+    "synchronize": true
+  },
+  "AWS_DEBUG_DB": {
+    "type": "mysql",
+    "host": "paytomat.cjwbvsjmices.us-east-1.rds.amazonaws.com",
+    "port": 3306,
+    "username": "db_user",
+    "password": "blachne2__crafFts",
+    "database": "debug",
+    "entities": [
+      "dist/**/**.entity{.ts,.js}"
+    ],
+    "logging": true,
+    "supportBigNumbers": true
+  },
+  "AWS_PROD_DB": {
+    "type": "mysql",
+    "host": "paytomat.cjwbvsjmices.us-east-1.rds.amazonaws.com",
+    "port": 3306,
+    "username": "***",
+    "password": "***",
+    "database": "production",
+    "entities": [
+      "dist/**/**.entity{.ts,.js}"
+    ],
+    "logging": true,
+    "supportBigNumbers": true
+  },
+  "EOS_INDEXER_DB": {
+    "name": "eosindexer",
+    "type": "mysql",
+    "host": "blockchain-index.cjwbvsjmices.us-east-1.rds.amazonaws.com",
+    "port": 3306,
+    "username": "debug",
+    "password": "paled3__snow",
+    "database": "eos",
+    "entities": [
+      "dist/indexer/eos/**/**.entity{.ts,.js}"
+    ],
+    "logging": true,
+    "supportBigNumbers": true
+  }
+}
