@@ -1,4 +1,4 @@
-import {Devices} from "../../data/entity/devices.entity";
+import {Devices} from "../../entity/devices.entity";
 
 export interface GetDevicesBySiteIdDto {
   id: number,

@@ -1,4 +1,4 @@
-# test-fullstack
+# test-fullstack App
 
 Test app with on express server and react
 
@@ -8,3 +8,7 @@ Test app with on express server and react
 3. Run `npm start`
 4. Open http://localhost:8080
 5. Enjoi :)
+
+## Front-end project:
+For develop clien-side of this project just read README.md in public folder
+

@@ -1,9 +1,9 @@
-import {Users} from "../data/entity/users.entity";
-import {Sites} from "../data/entity/sites.entity";
-import {Devices} from "../data/entity/devices.entity";
-import {AlarmZones} from "../data/entity/alarm-zones.entity";
-import {StorageTypes} from "../data/entity/storage-types.entity";
-import {Storage} from "../data/entity/storages.entity";
+import {Users} from "../entity/users.entity";
+import {Sites} from "../entity/sites.entity";
+import {Devices} from "../entity/devices.entity";
+import {AlarmZones} from "../entity/alarm-zones.entity";
+import {StorageTypes} from "../entity/storage-types.entity";
+import {Storage} from "../entity/storages.entity";
 import {Connection, Repository} from "typeorm";
 import {FormDevicesBySiteIdDto, GetDevicesBySiteIdDto} from "./dto/get-devices-by-site-id.dto";
 

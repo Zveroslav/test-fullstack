@@ -1,18 +1,17 @@
-import connection from "./data";
+import connection from "./entity";
 import {Service} from "./services";
 import express = require("express");
 import * as path from "path";
 const cors = require('cors');
 const app = express();
 app.use(cors());
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, '/public/build')));
 
 
 async function router () {
   const service = new Service(await connection());
-
   app.get('/', function(req, res) {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+    res.sendFile(path.join(__dirname, '/public/build', 'index.html'));
   });
 
   app.get('/users', async (req, res) => {
